@@ -11,7 +11,7 @@ python scripts/prepare_ppt_master.py --workspace <工作目录>
 python scripts/prepare_ppt_master.py --workspace <工作目录> --source <已有上游 skills/ppt-master 目录>
 ```
 
-脚本成功时打印上游 `SKILL.md` 的绝对路径。下载需要 Git 和可访问 GitHub 的网络；网络不可用时优先使用本机已有的上游目录，不能谎称第一阶段已运行。针对实际输入类型按上游 `requirements.txt` 安装需要的依赖；脚本提供 `--install-deps` 选项用于完整安装，但完整依赖可能较大，且 PDF 转换所用 PyMuPDF 有独立许可证条款。不要把上游代码和依赖再次塞进本 Skill 的上传 ZIP。
+脚本成功时打印上游 `SKILL.md` 的绝对路径。下载需要 Git 和可访问 GitHub 的网络；网络不可用时优先使用本机已有的上游目录，不能谎称第一阶段已运行。针对实际输入类型按上游 `requirements.txt` 安装需要的依赖；脚本提供 `--install-deps` 选项用于完整安装。建议在工作目录建立独立 Python 虚拟环境，并用该环境的 Python 运行准备脚本及全部上游命令，避免依赖装入一个环境而导出时使用另一个环境。完整依赖可能较大，PDF 转换所用 PyMuPDF 有独立许可证条款。不要把上游代码和依赖再次塞进本 Skill 的上传 ZIP。
 
 用户要求的上传包限制为 10 MB，所以 ZIP 保存本 Skill 的流程、审查工具、准备脚本和第三方声明；完整上游在使用新稿流程时按需取得。使用已有 PPTX 的精修流程不依赖上游检出，可以直接进行。
 
