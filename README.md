@@ -9,7 +9,7 @@
 
 ## 使用
 
-将仓库内容放入名为 `competition-ppt-polish` 的单一文件夹，入口是 [SKILL.md](SKILL.md)。给代理提供文字要求、参考资料或现有 PPTX，并说明赛事、页数、演讲时长、风格和必须保留的内容（有则提供）；无需先自己做初稿。
+直接下载 [可上传的 Skill ZIP](competition-ppt-polish.zip)；压缩包仅有一个顶层文件夹 `competition-ppt-polish`，其中根目录即 [SKILL.md](SKILL.md)。给代理提供文字要求、参考资料或现有 PPTX，并说明赛事、页数、演讲时长、风格和必须保留的内容（有则提供）；无需先自己做初稿。
 
 从文字新建 PPT 时，本 Skill 的 [准备脚本](scripts/prepare_ppt_master.py)可在工作目录中按需取得固定版本的完整 PPT Master，或接入本机已有的上游目录。完整 PPT Master 引擎不放入此仓库的 Skill 上传 ZIP；下载需要 Git 与 GitHub 网络，所需 Python 依赖按实际任务安装。上游是由代理执行的制稿工作流，准备脚本只负责获取与定位，不会单独生成 PPTX。
 
@@ -21,4 +21,4 @@
 - 原生设计画像：[scripts/pptx_design_profile.py](scripts/pptx_design_profile.py)
 - 内容与素材审查：[scripts/audit_pptx.py](scripts/audit_pptx.py)
 
-下载：页面右上角 **Code → Download ZIP**。本仓库采用 [MIT License](LICENSE)；上游代码来源见 [第三方声明](THIRD_PARTY_NOTICES.md)。
+本仓库采用 [MIT License](LICENSE)；上游代码来源见 [第三方声明](THIRD_PARTY_NOTICES.md)。
