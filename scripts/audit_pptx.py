@@ -15,6 +15,9 @@ from pathlib import Path
 from xml.etree import ElementTree as ET
 from zipfile import ZipFile
 
+from pptx_design_profile import analyze as analyze_design
+from pptx_design_profile import compare as compare_design
+
 
 A = "{http://schemas.openxmlformats.org/drawingml/2006/main}"
 C = "{http://schemas.openxmlformats.org/drawingml/2006/chart}"
@@ -97,7 +100,7 @@ def inspect(source: Path, candidate: Path) -> dict:
                 )
         src_charts = chart_values(original)
         dst_charts = chart_values(edited)
-        return {
+        result = {
             "source_slides": len(src_ids),
             "candidate_slides": len(dst_ids),
             "slide_numbers_match": src_ids == dst_ids,
@@ -110,6 +113,10 @@ def inspect(source: Path, candidate: Path) -> dict:
             and src_charts == dst_charts,
             "limit": "Character sets cannot detect reordering or hidden/overlapped text; inspect each rendered slide.",
         }
+        result["native_design_review"] = compare_design(
+            analyze_design(source), analyze_design(candidate)
+        )
+        return result
 
 
 def main() -> int:
