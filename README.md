@@ -17,6 +17,7 @@
 - 竞赛精修流程：[references/workflow.md](references/workflow.md)
 - PPT Master 获取与融合：[references/ppt-master-integration.md](references/ppt-master-integration.md)
 - 浅蓝工程竞赛稿偏好：[references/design-profile.md](references/design-profile.md)
+- 29 页工程竞赛稿逐页拆解：[references/engineering-deck-case-study.md](references/engineering-deck-case-study.md)
 - 其他场景经验：[references/scenario-lessons.md](references/scenario-lessons.md)
 - 原生设计画像：[scripts/pptx_design_profile.py](scripts/pptx_design_profile.py)
 - 内容与素材审查：[scripts/audit_pptx.py](scripts/audit_pptx.py)
