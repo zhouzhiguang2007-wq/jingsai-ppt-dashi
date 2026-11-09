@@ -7,7 +7,7 @@ description: 从文字要求或资料制作中文竞赛PPT：先用 PPT Master �
 
 以用户最新要求和资料为准，直接完成可编辑 PPTX。文字需求、主题、文档或资料尚无成品 PPTX 时，执行 [从文字到竞赛成品的两阶段流程](references/full-pipeline.md)：**先用 PPT Master 的 Generate PPTX 路线制作初稿，再用本 Skill 的 [竞赛精修流程](references/workflow.md)逐页优化**。这两阶段是同一个交付任务，不能在生成初稿后就结束。已有 PPTX 且用户只要优化时，直接执行竞赛精修；用户明确要求推倒重做时，先按 PPT Master 生成路线重建，再精修。
 
-新稿开始前读 [PPT Master 获取与融合说明](references/ppt-master-integration.md)，按需使用 [准备脚本](scripts/prepare_ppt_master.py)定位或获取上游运行目录。工程竞赛浅蓝底纹稿读 [设计偏好](references/design-profile.md)；其他汇报风格、模板、单页文案或配图读 [场景经验](references/scenario-lessons.md)。这些案例偏好不能盖过当次用户要求。
+新稿开始前读 [PPT Master 获取与融合说明](references/ppt-master-integration.md)，按需使用 [准备脚本](scripts/prepare_ppt_master.py)定位或获取上游运行目录。工程竞赛浅蓝底纹稿读 [设计偏好](references/design-profile.md)；用户要求参照这份 29 页工程竞赛稿或制作相近的技术答辩时，读 [逐页案例拆解](references/engineering-deck-case-study.md)，借鉴结构和页型，不复制项目事实与素材。其他汇报风格、模板、单页文案或配图读 [场景经验](references/scenario-lessons.md)。这些案例偏好不能盖过当次用户要求。
 
 ## 内容与素材边界
 
